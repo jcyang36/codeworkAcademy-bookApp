@@ -42,13 +42,22 @@ public class Book {
 	public void setPrice(double price) {
 		this.price = price;
 	}
-	public boolean isIsinStock() {
+	public boolean isInStock() {
 		return isinStock;
 	}
-	public void setIsinStock(boolean isinStock) {
+	public void setisInStock(boolean isinStock) {
 		this.isinStock = isinStock;
 	}
 	public String getDisplayText(){
 		return title+ " by "+ author+ " : "+description;
 	}
+	public String booksPrice(int numbooks){
+		if( isInStock()){
+			return "Price for " + numbooks+" books is "+numbooks* getPrice();
+		}
+		else{
+			return "No books have been found";
+		}
+					
+	}    
 }

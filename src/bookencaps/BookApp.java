@@ -15,7 +15,9 @@ public class BookApp {
 		b.setTitle("The Joy Luck Club");
 		b.setAuthor("Amy Tan");
 		b.setDescription("A classic about four Chinese-American mothers and their daughters");
-		
+		b.setPrice(20.00);
+		b.setisInStock(true);
+		System.out.println(b.booksPrice(5));
 		System.out.println(b.getTitle());
 		System.out.println(b.getAuthor());
 		System.out.println(b.getDisplayText());
